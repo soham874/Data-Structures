@@ -22,6 +22,7 @@ public class LinkedListInsertion {
 		System.out.println("Before insertion");
 		Utilities.printList(first);
 		
+		//doesnot work to insert at front
 		insertBetween(fourth, second, third);
 		
 		System.out.println("After insertion");
@@ -33,5 +34,11 @@ public class LinkedListInsertion {
 
 		insertAfter.next = toBeInserted;
 		toBeInserted.next = insertBefore;
+	}
+	
+	//inserts at front
+	private static void insertBetween(Node toBeInserted, Node first) {
+
+		toBeInserted.next = first;
 	}
 }
