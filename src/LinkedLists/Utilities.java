@@ -8,11 +8,13 @@ public class Utilities {
 	public static class Node {
 		int data;
 		Node next;
-
+		Node previous;
+		
 		// paramterized constructor, which denotes each cell
 		Node(int d) {
 			data = d; // storing the data
 			next = null; // storing the 'link' to the next cell
+			previous = null;
 		}
 	}
 
