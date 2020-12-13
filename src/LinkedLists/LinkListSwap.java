@@ -31,7 +31,7 @@ public class LinkListSwap {
 		Node swapNode1 = null;
 		Node swapNode2 = null;
 		while (n != null) {
-			
+
 			if (currentPos == swapPos1)
 				swapNode1 = n;
 			else if (currentPos == swapPos2)
@@ -40,17 +40,23 @@ public class LinkListSwap {
 			currentPos++;
 			n = n.next;
 		}
+
+		swapNode1.previous.next = swapNode2;
+		swapNode1.next.previous = swapNode2;
+
+		swapNode2.previous.next = swapNode1;
+		swapNode2.next.previous = swapNode1;
 		
 		Node temp = null;
 		
 		temp = swapNode1.previous;
 		swapNode1.previous = swapNode2.previous;
 		swapNode2.previous = temp;
-		//temp.previous.next = swapNode2;
 		
 		temp = swapNode1.next;
 		swapNode1.next = swapNode2.next;
 		swapNode2.next = temp;
-			
+
 	}
+
 }
