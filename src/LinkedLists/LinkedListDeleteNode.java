@@ -2,7 +2,7 @@ package LinkedLists;
 
 import LinkedLists.Utilities.Node;
 
-public class LinkedListDelete {
+public class LinkedListDeleteNode {
 
 	public static void main(String[] args) {
 
@@ -27,7 +27,8 @@ public class LinkedListDelete {
 		System.out.println("Before deleting");
 		Utilities.printList(first);
 		
-		deleteCell(third);
+		//again throws exception if wanting to delete first
+		deleteCell(fourth);
 		
 		System.out.println("After deleting");
 		Utilities.printList(first);

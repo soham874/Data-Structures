@@ -6,6 +6,8 @@ public class Utilities {
 	// 2 part; the data part and the 'node' part, which stores info about the new
 	// node to which it links
 	public static class Node {
+		static Node start;
+		
 		int data;
 		Node next;
 		Node previous;
