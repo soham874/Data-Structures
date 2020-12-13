@@ -7,11 +7,11 @@ public class Utilities {
 	// node to which it links
 	public static class Node {
 		static Node start;
-		
+
 		int data;
 		Node next;
 		Node previous;
-		
+
 		// paramterized constructor, which denotes each cell
 		Node(int d) {
 			data = d; // storing the data
@@ -27,5 +27,20 @@ public class Utilities {
 			printFrom = printFrom.next; // making the next node as the current one
 		}
 		System.out.println();
+	}
+
+	// creates a node and pushes in the data at the end
+	static Node previousNode = null;
+
+	public void nodepush(int data) {
+
+		if (previousNode == null) {
+			Utilities.Node.start = new Node(data);
+			previousNode = Utilities.Node.start;
+		} else {
+			Node currentNode = new Node(data);
+			previousNode.next = currentNode;
+			previousNode = currentNode;
+		}
 	}
 }
