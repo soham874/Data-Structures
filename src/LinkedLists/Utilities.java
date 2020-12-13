@@ -39,6 +39,7 @@ public class Utilities {
 			previousNode = Utilities.Node.start;
 		} else {
 			Node currentNode = new Node(data);
+			currentNode.previous = previousNode;
 			previousNode.next = currentNode;
 			previousNode = currentNode;
 		}
