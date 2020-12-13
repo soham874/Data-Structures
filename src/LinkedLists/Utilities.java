@@ -19,8 +19,9 @@ public class Utilities {
 	// takes in the input from which cell to print
 	public static void printList(Node printFrom) {
 		while (printFrom != null) { // continuing until the current node exists
-			System.out.println(printFrom.data + " "); // printing the info stored in 'data' variable
+			System.out.print(printFrom.data + " "); // printing the info stored in 'data' variable
 			printFrom = printFrom.next; // making the next node as the current one
 		}
+		System.out.println();
 	}
 }
