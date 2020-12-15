@@ -16,9 +16,10 @@ public class LinkListSwap {
 		System.out.println("Before swapping");
 		Utilities.printList(Utilities.Node.start);
 
-		int swapPos1 = 3;
-		int swapPos2 = 6;
-
+		int swapPos1 = 2;
+		int swapPos2 = 7;
+		
+		//only for in between
 		swapNodes(Utilities.Node.start, swapPos1, swapPos2);
 
 		System.out.println("After swapping");
