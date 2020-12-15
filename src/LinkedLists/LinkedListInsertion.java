@@ -1,6 +1,6 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkedListInsertion {
 
@@ -20,13 +20,13 @@ public class LinkedListInsertion {
 		Node fourth = new Node(4);
 		
 		System.out.println("Before insertion");
-		Utilities.printList(first);
+		UtilitiesLL.printList(first);
 		
 		//doesnot work to insert at front
 		insertBetween(fourth, second, third);
 		
 		System.out.println("After insertion");
-		Utilities.printList(first);
+		UtilitiesLL.printList(first);
 	}
 
 	// inserts parameter 1st between 2nd and 3rd

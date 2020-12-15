@@ -2,7 +2,7 @@ package LinkedLists;
 
 import java.util.HashMap;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkedListLoopDetect {
 
@@ -10,16 +10,16 @@ public class LinkedListLoopDetect {
 
 	public static void main(String[] args) {
 
-		Utilities utilities = new Utilities();
+		UtilitiesLL utilities = new UtilitiesLL();
 
 		int[] array = { 1, 2, 3, 4, 5};
 
 		for (int i = 0; i < array.length; i++)
 			utilities.nodepush(array[i]);
 
-		Utilities.Node.start.next.next.next.next = Utilities.Node.start.next;
+		UtilitiesLL.Node.start.next.next.next.next = UtilitiesLL.Node.start.next;
 
-		System.out.println(checkLoop(Utilities.Node.start));
+		System.out.println(checkLoop(UtilitiesLL.Node.start));
 	}
 
 	private static String checkLoop(Node start) {

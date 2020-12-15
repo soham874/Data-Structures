@@ -3,7 +3,7 @@ package LinkedLists;
 import java.io.IOException;
 import java.util.HashMap;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkedListDuplicate {
 
@@ -11,7 +11,7 @@ public class LinkedListDuplicate {
 
 	public static void main(String[] args) throws IOException {
 
-		Utilities utilities = new Utilities();
+		UtilitiesLL utilities = new UtilitiesLL();
 
 		int[] array = { 1, 2, 3, 5, 3, 2, 4, 1 };
 
@@ -19,10 +19,10 @@ public class LinkedListDuplicate {
 			utilities.nodepush(array[i]);
 
 		System.out.println("Before deleting");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 		Node previous = null;
 
-		Node node = Utilities.Node.start;
+		Node node = UtilitiesLL.Node.start;
 		while (node != null) {
 
 			if (listitems.containsKey(node.data)) {
@@ -36,7 +36,7 @@ public class LinkedListDuplicate {
 		}
 
 		System.out.println("After deleting");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 
 	}
 

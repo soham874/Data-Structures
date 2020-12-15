@@ -1,19 +1,19 @@
 package LinkedLists;
 
-public class Utilities {
+public class UtilitiesLL {
 
 	// Node class is used to generate each Cell. In this case each cell consists of
 	// 2 part; the data part and the 'node' part, which stores info about the new
 	// node to which it links
 	public static class Node {
-		static Node start;
+		public static Node start;
 
-		int data;
-		Node next;
-		Node previous;
+		public int data;
+		public Node next;
+		public Node previous;
 
 		// paramterized constructor, which denotes each cell
-		Node(int d) {
+		public Node(int d) {
 			data = d; // storing the data
 			next = null; // storing the 'link' to the next cell
 			previous = null;
@@ -33,11 +33,11 @@ public class Utilities {
 	// creates a node and pushes in the data at the end
 	static Node previousNode = null;
 
-	public void nodepush(int data) {
+	public static void nodepush(int data) {
 
 		if (previousNode == null) {
-			Utilities.Node.start = new Node(data);
-			previousNode = Utilities.Node.start;
+			UtilitiesLL.Node.start = new Node(data);
+			previousNode = UtilitiesLL.Node.start;
 		} else {
 			Node currentNode = new Node(data);
 			

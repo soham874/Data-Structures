@@ -1,6 +1,6 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkedListDeleteNode {
 
@@ -25,13 +25,13 @@ public class LinkedListDeleteNode {
 		fourth.previous = third;
 		
 		System.out.println("Before deleting");
-		Utilities.printList(first);
+		UtilitiesLL.printList(first);
 		
 		//again throws exception if wanting to delete first
 		deleteCell(fourth);
 		
 		System.out.println("After deleting");
-		Utilities.printList(first);
+		UtilitiesLL.printList(first);
 	}
 
 	private static void deleteCell(Node cellToBeDeleted) {

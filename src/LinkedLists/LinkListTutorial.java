@@ -1,6 +1,6 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 //Simple code to illustrate generation of a 3 cell linked list
 
@@ -21,7 +21,7 @@ public class LinkListTutorial {
 		third.next = fourth;
 		// third.next = first; //Activating this will make it a 'circular' link list
 
-		Utilities.printList(first);
+		UtilitiesLL.printList(first);
 
 	}
 

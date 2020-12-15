@@ -1,13 +1,13 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkedListLastToFront {
 
 	public static Node n;
 
 	public static void main(String[] args) {
-		Utilities utilities = new Utilities();
+		UtilitiesLL utilities = new UtilitiesLL();
 
 		int[] array = { 0, 1, 2, 3, 4 };
 
@@ -15,9 +15,9 @@ public class LinkedListLastToFront {
 			utilities.nodepush(array[i]);
 
 		System.out.println("Before swapping");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 
-		n = Utilities.Node.start;
+		n = UtilitiesLL.Node.start;
 
 		while (n.next != null)
 			n = n.next;
@@ -25,13 +25,13 @@ public class LinkedListLastToFront {
 		movetofirst();
 
 		System.out.println("After swapping");
-		Utilities.printList(Utilities.Node.start.previous);
+		UtilitiesLL.printList(UtilitiesLL.Node.start.previous);
 	}
 
 	private static void movetofirst() {
 
-		n.next = Utilities.Node.start;
-		Utilities.Node.start.previous = n;
+		n.next = UtilitiesLL.Node.start;
+		UtilitiesLL.Node.start.previous = n;
 
 		n.previous.next = null;
 		n.previous = null;

@@ -2,7 +2,7 @@ package LinkedLists;
 
 import java.util.HashMap;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkListPalindrome {
 
@@ -10,14 +10,14 @@ public class LinkListPalindrome {
 
 	public static void main(String[] args) {
 
-		Utilities utilities = new Utilities();
+		UtilitiesLL utilities = new UtilitiesLL();
 
 		int[] array = { 1, 2, 3, 2, 1 };
 
 		for (int i = 0; i < array.length; i++)
 			utilities.nodepush(array[i]);
 	
-		Node node = Utilities.Node.start;
+		Node node = UtilitiesLL.Node.start;
 		int val = 1;
 		while (node != null) {
 			listitems.put(++val, node.data);

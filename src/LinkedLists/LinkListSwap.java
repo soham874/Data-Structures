@@ -1,12 +1,12 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkListSwap {
 
 	public static void main(String[] args) {
 
-		Utilities utilities = new Utilities();
+		UtilitiesLL utilities = new UtilitiesLL();
 
 		int[] array = { 1, 2, 3, 4, 5, 6, 7 };
 
@@ -14,16 +14,16 @@ public class LinkListSwap {
 			utilities.nodepush(array[i]);
 
 		System.out.println("Before swapping");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 
 		int swapPos1 = 2;
 		int swapPos2 = 7;
 		
 		//only for in between
-		swapNodes(Utilities.Node.start, swapPos1, swapPos2);
+		swapNodes(UtilitiesLL.Node.start, swapPos1, swapPos2);
 
 		System.out.println("After swapping");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 	}
 
 	private static void swapNodes(Node n, int swapPos1, int swapPos2) {

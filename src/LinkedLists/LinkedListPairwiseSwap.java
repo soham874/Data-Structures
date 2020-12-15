@@ -1,12 +1,12 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class LinkedListPairwiseSwap {
 
 	public static void main(String[] args) {
 
-		Utilities utilities = new Utilities();
+		UtilitiesLL utilities = new UtilitiesLL();
 
 		int[] array = { 0, 1, 2, 3, 4 };
 
@@ -14,9 +14,9 @@ public class LinkedListPairwiseSwap {
 			utilities.nodepush(array[i]);
 
 		System.out.println("Before swapping");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 
-		Node n = Utilities.Node.start;
+		Node n = UtilitiesLL.Node.start;
 
 		while (n != null && n.next != null) {
 			swapPiar(n);
@@ -24,7 +24,7 @@ public class LinkedListPairwiseSwap {
 		}
 		
 		System.out.println("After swapping");
-		Utilities.printList(Utilities.Node.start.previous);
+		UtilitiesLL.printList(UtilitiesLL.Node.start.previous);
 
 	}
 

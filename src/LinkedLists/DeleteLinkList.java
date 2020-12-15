@@ -1,12 +1,12 @@
 package LinkedLists;
 
-import LinkedLists.Utilities.Node;
+import LinkedLists.UtilitiesLL.Node;
 
 public class DeleteLinkList {
 
 	public static void main(String[] args) {
 		// creating 3 cells with the data in paranthesis
-		Utilities.Node.start = new Node(0);
+		UtilitiesLL.Node.start = new Node(0);
 		Node first = new Node(1);
 		Node second = new Node(2);
 		Node third = new Node(3);
@@ -14,17 +14,17 @@ public class DeleteLinkList {
 
 		// equating the next cell to the Node variable 'next' of the previous cell to
 		// create the link
-		Utilities.Node.start.next = first;
+		UtilitiesLL.Node.start.next = first;
 		first.next = second;
 		second.next = third;
 		third.next = fourth;
 		
 		System.out.println("Before delete");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 		
-		Utilities.Node.start = null;
+		UtilitiesLL.Node.start = null;
 		
 		System.out.println("After delete");
-		Utilities.printList(Utilities.Node.start);
+		UtilitiesLL.printList(UtilitiesLL.Node.start);
 	}
 }
