@@ -33,21 +33,13 @@ public class LinkedListPairwiseSwap {
 		Node swapNode1 = start;
 		Node swapNode2 = start.next;
 
-		if (swapNode1.previous != null)
-			swapNode2.previous = swapNode1.previous;
-		else
-			swapNode2.previous = null;
-
+		swapNode2.previous = (swapNode1.previous != null) ? swapNode1.previous : null;
 		swapNode1.previous = swapNode2;
 
 		if (swapNode2.next != null)
 			swapNode2.next.previous = swapNode1;
-
-		if (swapNode2.next != null)
-			swapNode1.next = swapNode2.next;
-		else
-			swapNode1.next = null;
-
+		
+		swapNode1.next = (swapNode2.next != null) ? swapNode2.next : null;
 		swapNode2.next = swapNode1;
 
 		if (swapNode2.previous != null)
