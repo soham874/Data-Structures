@@ -1,0 +1,20 @@
+Linked Lists
+
+DeleteLinkList.java 		>> 	delete complete link list
+LinkedListDeleteNode.java	>>	delete a particular node 
+LinkedListDuplicate.java	>>	remove duplicate nodes from LL	
+LinkedListInsertion.java	>> 	Insert a node at a position
+LinkedListLastToFront.java	>>	Move last ndoe to front
+LinkedListLoopDetect.java	>>	Detects loop in link list and its length
+LinkedListOperations.java	>>	Prints number of occurance of each data in a LL
+LinkedListPairwiseSwap.java	>>	Swaps pair of nodes starting from first
+LinkListPalindrome.java		>>	Checks if a linked list is palindrome in nature
+LinkListSwap.java			>> 	Swaps nodes at 2 given positions
+LinkListTutorial.java		>> 	Basic LL operations
+UtilitiesLL.java			>>	Holds functions to create, print and add nodes to a Linked ListInfixtoPostfix.java
+
+Stack
+
+StackTutorial.java			>>	Basic implementation of the 4 major stack operations
+UtilityS.java				>>	Stack implementation with array. Holds the push, pop, isEmpty and peek functions
+InfixtoPostfix.java			>>	Stack implementation to change a infix expression to postfix

@@ -6,8 +6,9 @@ public class UtilitiesLL {
 	// 2 part; the data part and the 'node' part, which stores info about the new
 	// node to which it links
 	public static class Node {
-		public static Node start;
 
+		public static Node start;
+		
 		public int data;
 		public Node next;
 		public Node previous;
@@ -28,10 +29,9 @@ public class UtilitiesLL {
 		}
 		System.out.println();
 	}
-	
 
 	// creates a node and pushes in the data at the end
-	static Node previousNode = null;
+	public static Node previousNode = null;
 
 	public static void nodepush(int data) {
 
@@ -40,9 +40,9 @@ public class UtilitiesLL {
 			previousNode = UtilitiesLL.Node.start;
 		} else {
 			Node currentNode = new Node(data);
-			
+
 			currentNode.previous = previousNode;
-			
+
 			previousNode.next = currentNode;
 			previousNode = currentNode;
 		}
