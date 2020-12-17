@@ -19,3 +19,5 @@ StackTutorial.java			>>	Basic implementation of the 4 major stack operations
 UtilityS.java				>>	Stack implementation with array. Holds the push, pop, isEmpty and peek functions
 InfixtoPostfix.java			>>	Stack implementation to change a infix expression to postfix
 StockSpan.java				>>	Solving the stock span problem using stack
+BalancedParanthesis.java	>>	Checks if brackets are balanced
+NextGreatestElement.java	>>	Output the next greatest element to the right
