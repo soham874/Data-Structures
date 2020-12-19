@@ -11,7 +11,9 @@ LinkedListPairwiseSwap.java	>>	Swaps pair of nodes starting from first
 LinkListPalindrome.java		>>	Checks if a linked list is palindrome in nature
 LinkListSwap.java			>> 	Swaps nodes at 2 given positions
 LinkListTutorial.java		>> 	Basic LL operations
-UtilitiesLL.java			>>	Holds functions to create, print and add nodes to a Linked ListInfixtoPostfix.java
+JosephusCircle.java			>>	Given n people in a circle and m<n, the mth person is executed. Find survivor
+UtilitiesLL.java			>>	Holds functions to create, print and add nodes to a Linked 
+UtilitiesCLL.java			>>	Holds functions to create, print and add nodes to a Circular Linked 
 
 Stack
 

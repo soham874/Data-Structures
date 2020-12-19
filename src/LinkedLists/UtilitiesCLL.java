@@ -17,6 +17,13 @@ public class UtilitiesCLL {
 			previous = null;
 
 		}
+		
+		public cNode(int d) {
+			data = d;
+			next = null;
+			previous = null;
+
+		}
 
 	}
 
@@ -40,6 +47,22 @@ public class UtilitiesCLL {
 			previousNode = UtilitiesCLL.cNode.head;
 		} else {
 			cNode current = new cNode(d, input);
+			current.previous = previousNode;
+			previousNode.next = current;
+			previousNode = previousNode.next;
+
+		}
+		previousNode.next = UtilitiesCLL.cNode.head;
+		UtilitiesCLL.cNode.head.previous = previousNode;
+	}
+	
+	public static void insertNode(int d) {
+
+		if (previousNode == null) {
+			UtilitiesCLL.cNode.head = new cNode(d);
+			previousNode = UtilitiesCLL.cNode.head;
+		} else {
+			cNode current = new cNode(d);
 			current.previous = previousNode;
 			previousNode.next = current;
 			previousNode = previousNode.next;
