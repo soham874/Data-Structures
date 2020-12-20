@@ -72,7 +72,7 @@ public class UtilityS {
 	}
 
 	// initializes a stack
-	public static void selectStaack(int[] stackName) {
+	public void selectStaack(int[] stackName) {
 
 		if (!stackData.isEmpty())
 			stackData.put(stack, top);

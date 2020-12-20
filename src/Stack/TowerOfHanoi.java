@@ -4,39 +4,44 @@ public class TowerOfHanoi {
 	public static void main(String[] args) {
 		UtilityS stack = new UtilityS();
 
-		int[] first = new int[UtilityS.max];
-		int[] second = new int[UtilityS.max];
-		UtilityS.selectStaack(first);
+		int[] source = new int[UtilityS.max];
+		int[] auxillary = new int[UtilityS.max];
+		int[] destination = new int[UtilityS.max];
 
-		stack.push(10);
-		stack.push(20);
-		stack.push(30);
-
-		stack.printstack();
-
-		UtilityS.selectStaack(second);
-
-		stack.push(40);
-		stack.push(20);
-		stack.push(30);
-
-		stack.printstack();
-
-		UtilityS.selectStaack(first);
-
-		stack.printstack();
+		int n = 5;
 		
-		UtilityS.selectStaack(second);
-
-		stack.printstack();
+		stack.selectStaack(source);
+		for (int i = n; i >= 1; i--)
+			stack.push(i);
 		
-		UtilityS.selectStaack(first);
-
-		stack.printstack();
 		
-		UtilityS.selectStaack(second);
+		System.out.println("Before move");
+		stack.selectStaack(source);stack.printstack();
+		stack.selectStaack(destination);stack.printstack();
 
-		stack.printstack();
+		for (int i = 1; i <= (Math.pow(2, n)- 1); i++)
+			if (i % 3 == 0) {
+				stack.selectStaack(auxillary);
+				int temp = stack.peek();
+				stack.pop();
+				stack.selectStaack(destination);
+				stack.push(temp);
+			} else if (i % 3 == 1) {
+				stack.selectStaack(source);
+				int temp = stack.peek();
+				stack.pop();
+				stack.selectStaack(destination);
+				stack.push(temp);
+			} else {
+				stack.selectStaack(source);
+				int temp = stack.peek();
+				stack.pop();
+				stack.selectStaack(auxillary);
+				stack.push(temp);
+			}
+		System.out.println("After move");
+		stack.selectStaack(source);stack.printstack();
+		stack.selectStaack(destination);stack.printstack();
 
 	}
 }

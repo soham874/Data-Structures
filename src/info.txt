@@ -24,3 +24,4 @@ StockSpan.java				>>	Solving the stock span problem using stack
 BalancedParanthesis.java	>>	Checks if brackets are balanced
 NextGreatestElement.java	>>	Output the next greatest element to the right
 CelebrityProblem.java		>> 	Checks if there is celebrity in a mix of people
+TowerOfHanoi.java			>> 	Tower of Hanoi game
