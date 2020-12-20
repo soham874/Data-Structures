@@ -1,11 +1,15 @@
 package Stack;
 
+import java.util.HashMap;
+
 public class UtilityS {
 
-	private static int max = 100;
-	private static int top = -1;
+	public static int max = 100;
+	private static int top;
 
-	private static int[] stack = new int[max];
+	private static HashMap<int[], Integer> stackData = new HashMap<int[], Integer>();
+
+	private static int[] stack;
 
 	// this method returns if the stack is empty or not
 	public boolean isEmpty() {
@@ -45,6 +49,7 @@ public class UtilityS {
 		return val;
 	}
 
+	// outputs stack data
 	public void printstack() {
 
 		System.out.print("Current stack data >> ");
@@ -54,6 +59,7 @@ public class UtilityS {
 		System.out.println();
 	}
 
+	// checks if a value exists in a stack
 	public static boolean exists(int val) {
 		int i = 0;
 		while (i < top) {
@@ -65,4 +71,16 @@ public class UtilityS {
 		return false;
 	}
 
+	// initializes a stack
+	public static void selectStaack(int[] stackName) {
+
+		if (!stackData.isEmpty())
+			stackData.put(stack, top);
+
+		if (!stackData.containsKey(stackName))
+			stackData.put(stackName, -1);
+
+		stack = stackName;
+		top = stackData.get(stack);
+	}
 }

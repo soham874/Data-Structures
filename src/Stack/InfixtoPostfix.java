@@ -11,7 +11,7 @@ public class InfixtoPostfix {
 		UtilityS utility = new UtilityS();
 
 		//not working with exponenets currently, following BODMAS
-		String infix = "(a+b)*(c+d)";
+		String infix = "a+b*c+d";
 
 		for (int i = 0; i < infix.length(); i++) {
 

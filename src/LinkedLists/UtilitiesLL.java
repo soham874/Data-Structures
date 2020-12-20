@@ -32,7 +32,6 @@ public class UtilitiesLL {
 
 	// creates a node and pushes in the data at the end
 	public static Node previousNode = null;
-
 	public static void nodepush(int data) {
 
 		if (previousNode == null) {

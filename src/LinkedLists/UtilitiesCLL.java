@@ -27,6 +27,7 @@ public class UtilitiesCLL {
 
 	}
 
+	//pritns circular LL data only once
 	public static void printCircular() {
 		cNode start = UtilitiesCLL.cNode.head;
 		cNode loop = start;
@@ -40,6 +41,7 @@ public class UtilitiesCLL {
 
 	public static cNode previousNode = null;
 
+	//inputs data for type integer, string
 	public static void insertNode(int d, String input) {
 
 		if (previousNode == null) {
@@ -56,6 +58,7 @@ public class UtilitiesCLL {
 		UtilitiesCLL.cNode.head.previous = previousNode;
 	}
 	
+	//inputs data for type integer
 	public static void insertNode(int d) {
 
 		if (previousNode == null) {
