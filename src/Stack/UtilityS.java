@@ -2,10 +2,10 @@ package Stack;
 
 public class UtilityS {
 
-	private int max = 100;
-	private int top = -1;
+	private static int max = 100;
+	private static int top = -1;
 
-	private int[] stack = new int[max];
+	private static int[] stack = new int[max];
 
 	// this method returns if the stack is empty or not
 	public boolean isEmpty() {
@@ -46,12 +46,23 @@ public class UtilityS {
 	}
 
 	public void printstack() {
-		
+
 		System.out.print("Current stack data >> ");
-		for(int i = 0;i<=top;i++)
+		for (int i = 0; i <= top; i++)
 			System.out.print(stack[i] + " ");
-		
+
 		System.out.println();
+	}
+
+	public static boolean exists(int val) {
+		int i = 0;
+		while (i < top) {
+			if (stack[i] == val)
+				return true;
+			i++;
+		}
+
+		return false;
 	}
 
 }
