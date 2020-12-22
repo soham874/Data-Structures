@@ -25,3 +25,8 @@ BalancedParanthesis.java	>>	Checks if brackets are balanced
 NextGreatestElement.java	>>	Output the next greatest element to the right
 CelebrityProblem.java		>> 	Checks if there is celebrity in a mix of people
 TowerOfHanoi.java			>> 	Tower of Hanoi game
+
+Binary Tree
+
+UtilitiesBT.java			>>	Holds functions to create and print a binary tree
+TreeTutorial.java			>> 	Basic implementation to populate and print a tree
