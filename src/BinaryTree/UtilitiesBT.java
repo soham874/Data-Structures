@@ -76,7 +76,7 @@ public class UtilitiesBT {
 			return;
 
 		// Increase distance between levels
-		space += 10;
+		space += 5;
 
 		// Process right child first
 		print2DUtil(root.right, space);
@@ -84,16 +84,19 @@ public class UtilitiesBT {
 		// Print current node after space
 		// count
 		System.out.print("\n");
-		for (int i = 10; i < space; i++)
+		for (int i = 5; i < space; i++)
 			System.out.print(" ");
 		System.out.print(root.data + "\n");
 
 		// Process left child
 		print2DUtil(root.left, space);
+		
+		System.out.println("\n");
 	}
 	
 	//prints the tree rotated 90 degree CCW
-	static void print2D() {
+	static void printTree() {
+		System.out.println("~~~~~~~~~~~~~~~~Tree Data~~~~~~~~~~~~~~~~~~");
 		BTNode root = UtilitiesBT.BTNode.root;
 		print2DUtil(root, 0);
 	}
