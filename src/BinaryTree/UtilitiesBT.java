@@ -98,6 +98,12 @@ public class UtilitiesBT {
 	static void printTree() {
 		System.out.println("~~~~~~~~~~~~~~~~Tree Data~~~~~~~~~~~~~~~~~~");
 		BTNode root = UtilitiesBT.BTNode.root;
-		print2DUtil(root, 0);
+		print2DUtil(root, 10);
+	}
+	
+	//prints the tree rotated 90 degree CCW
+	static void printTree(BTNode root) {
+		System.out.println("~~~~~~~~~~~~~~~~Tree Data~~~~~~~~~~~~~~~~~~");
+		print2DUtil(root, 10);
 	}
 }
