@@ -34,3 +34,4 @@ TreeTutorial.java			>> 	Basic implementation to populate and print a tree
 CheckDuplicate.java			>>	Check if 2 trees are duplicate
 ObtainPreorder.java			>>	Obtain preorder from post and inorder
 MirrorTree.java				>>	Obtain the mirror of a binary tree
+LevelOrder.java				>>	Print a tree level by level		
