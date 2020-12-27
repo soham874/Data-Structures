@@ -32,3 +32,4 @@ UtilitiesBT.java			>>	Holds functions to create and print a binary tree
 TreeTraversal.java			>>	Inorder, postorder and preorder tree traversal
 TreeTutorial.java			>> 	Basic implementation to populate and print a tree
 CheckDuplicate.java			>>	Check if 2 trees are duplicate
+ObtainPreorder.java			>>	Obtain preorder from post and inorder
