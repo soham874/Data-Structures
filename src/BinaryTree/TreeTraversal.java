@@ -24,7 +24,7 @@ public class TreeTraversal {
 	}
 
 	// left root right
-	private static void inorder(BTNode root) {
+	public static void inorder(BTNode root) {
 
 		if (root == null)
 			return;
@@ -36,7 +36,7 @@ public class TreeTraversal {
 	}
 
 	// root left right
-	private static void preorder(BTNode root) {
+	public static void preorder(BTNode root) {
 
 		if (root == null)
 			return;
@@ -48,7 +48,7 @@ public class TreeTraversal {
 	}
 
 	// left right root
-	private static void postorder(BTNode root) {
+	public static void postorder(BTNode root) {
 
 		if (root == null)
 			return;
