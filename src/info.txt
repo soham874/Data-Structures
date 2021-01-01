@@ -35,3 +35,4 @@ CheckDuplicate.java			>>	Check if 2 trees are duplicate
 ObtainPreorder.java			>>	Obtain preorder from post and inorder
 MirrorTree.java				>>	Obtain the mirror of a binary tree
 LevelOrder.java				>>	Print a tree level by level		
+LowestCommonAncestor.java	>>	Lowest common ancestor of 2 nodes
