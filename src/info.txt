@@ -39,3 +39,4 @@ LowestCommonAncestor.java	>>	Lowest common ancestor of 2 nodes
 ToDoubleLinkedList.java		>>	Convert a binary tree into a double linked list (inorder)
 Diameter.java				>>	Returns the farthest distance between 2 nodes
 Level.java					>>	Returns the level of a data in a tree
+FixedDistance.java			>>	Returns nodes at a fixed distances from the root

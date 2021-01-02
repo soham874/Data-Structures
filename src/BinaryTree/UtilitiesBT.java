@@ -76,7 +76,7 @@ public class UtilitiesBT {
 			return;
 
 		// Increase distance between levels
-		space += 5;
+		space += 10;
 
 		// Process right child first
 		print2DUtil(root.right, space);
@@ -84,7 +84,7 @@ public class UtilitiesBT {
 		// Print current node after space
 		// count
 		System.out.print("\n");
-		for (int i = 5; i < space; i++)
+		for (int i = 10; i < space; i++)
 			System.out.print(" ");
 		System.out.print(root.data + "\n");
 
