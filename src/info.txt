@@ -37,3 +37,4 @@ MirrorTree.java				>>	Obtain the mirror of a binary tree
 LevelOrder.java				>>	Print a tree level by level		
 LowestCommonAncestor.java	>>	Lowest common ancestor of 2 nodes
 ToDoubleLinkedList.java		>>	Convert a binary tree into a double linked list (inorder)
+Diameter.java				>>	Returns the farthest distance between 2 nodes
