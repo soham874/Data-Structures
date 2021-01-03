@@ -24,5 +24,9 @@ public class GraphTutorial {
 		UtilityG.pushEdge(4,1);
 		
 		UtilityG.printList();
+		
+		UtilityG.populateMatrix();
+		
+		UtilityG.printMatrix();
 	}
 }

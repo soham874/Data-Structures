@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class UtilityG {
 
-	public static ArrayList<GNode> graph = new ArrayList<GNode>();
+	private static ArrayList<GNode> graph = new ArrayList<GNode>();
 
-	private static int nodes;
-	private static int[][] matrix = new int[nodes][nodes];
+	private static int vertices;
+	private static int[][] matrix;
 
 	// each node of a graph
 	public static class GNode {
@@ -23,17 +23,17 @@ public class UtilityG {
 	// prints the adjacency matrix
 	public static void printMatrix() {
 		System.out.println("~~~~~~~~~~~ADJACENCY MATRIX~~~~~~~~~~~~~");
-		System.out.print(" ");
-		for (int i = 0; i < nodes; i++)
+		System.out.print("  ");
+		for (int i = 0; i < vertices; i++)
 			System.out.print(" " + i);
-
 		System.out.println();
+		System.out.println("----------------");
 
-		for (int i = 0; i < nodes; i++) {
+		for (int i = 0; i < vertices; i++) {
 
-			System.out.print(i + " ");
+			System.out.print(i + "| ");
 
-			for (int j = 0; j < nodes; j++)
+			for (int j = 0; j < vertices; j++)
 				System.out.print(matrix[i][j] + " ");
 
 			System.out.println();
@@ -48,7 +48,7 @@ public class UtilityG {
 			System.out.println("Error..attempt to create edge between same vertices");
 			return;
 		}
-		
+
 		checkExistance(v1);
 		checkExistance(v2);
 
@@ -61,17 +61,17 @@ public class UtilityG {
 	private static void addEdge(int v1, int v2) {
 
 		GNode vertex2 = new GNode(v2);
-		
+
 		for (int i = 0; i < graph.size(); i++) {
 
 			if (graph.get(i).data == v1) {
 
 				GNode current = graph.get(i);
-				
-				while(current.next != null)
+
+				while (current.next != null)
 					current = current.next;
-				
-				current.next = vertex2;			
+
+				current.next = vertex2;
 			}
 		}
 
@@ -84,8 +84,7 @@ public class UtilityG {
 			if (graph.get(i).data == v)
 				return;
 		}
-			
-		
+
 		GNode current = new GNode(v);
 		graph.add(current);
 	}
@@ -103,4 +102,23 @@ public class UtilityG {
 		}
 	}
 
+	// populates the adjacency matrix from list
+	public static int[][] populateMatrix() {
+		vertices = graph.size();
+		matrix = new int[vertices][vertices];
+
+		for (int i = 0; i < vertices; i++) {
+			
+			GNode current = graph.get(i);
+			int head = current.data;
+
+			while (current != null) {
+				matrix[head][current.data] = (head == current.data)?0:1;
+				current = current.next;
+			}
+
+		}
+
+		return matrix;
+	}
 }
